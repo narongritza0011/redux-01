@@ -30,13 +30,12 @@ const Page1 = () => {
     ditpatch({
       type: "LOGOUT",
       payload: null,
-
     });
   };
 
   return (
     <>
-      <div>Page1 token : {user?user.data.token:''} </div>
+      <div>Page1 token : {user ? user.data.token : ""} </div>
       <button onClick={handleLogin}>Login</button>
 
       <hr />
